@@ -1,1 +1,2 @@
-# pip install aiogram Pillow
+pip install aiogram Pillow
+aiogram>=3.0.0
