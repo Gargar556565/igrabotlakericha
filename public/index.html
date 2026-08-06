@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Крестики-нолики</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="player-info">
+                <span id="userAvatar" class="avatar">👤</span>
+                <div class="player-text">
+                    <span id="playerName" class="name">Игрок</span>
+                    <span class="subtitle">Вы — ❌ (X)</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="score-board">
+                <div class="score-item active">
+                    <span class="label">❌ Вы</span>
+                    <span id="playerScore" class="value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">🤝 Ничья</span>
+                    <span id="drawScore" class="value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="label">⭕ Бот</span>
+                    <span id="botScore" class="value">0</span>
+                </div>
+            </div>
+
+            <div id="status" class="status">Нажмите /new чтобы начать игру</div>
+
+            <div id="board" class="board hidden">
+                <!-- 9 ячеек генерируются JS -->
+            </div>
+        </main>
+
+        <footer>
+            <button id="newGameBtn" class="new-game-btn hidden">🔄 Новая игра</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
